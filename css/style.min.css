@@ -470,7 +470,6 @@ body._lock {
   text-align: center;
 }
 .page__body {
-  min-height: calc(100vh - 270px);
   background-color: #fff;
   box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.25);
 }
