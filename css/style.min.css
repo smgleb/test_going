@@ -487,7 +487,7 @@ body._lock {
 
 .calculators__items {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 @media (max-width: 479.98px) {
   .calculators__items {
