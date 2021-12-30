@@ -204,7 +204,6 @@ body._lock {
   max-width: 1950px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -200px;
   padding: 30px 0px;
   padding-left: 120px;
   padding-right: 120px;
@@ -463,21 +462,11 @@ body._lock {
   color: #151515;
 }
 
-.page {
-  flex: 1 1 auto;
-}
-.page__title {
-  text-align: center;
-}
-.page__body {
-  background-color: #fff;
-  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.25);
-}
-
 ._title {
   font-size: 26px;
   line-height: 25px;
   margin: 0px 0px 1.2em 0px;
+  text-align: left;
 }
 @media (max-width: 1950px) {
   ._title {
@@ -485,9 +474,31 @@ body._lock {
   }
 }
 
+.page {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+.page__body {
+  flex: 1 1 auto;
+  width: 100%;
+  margin-top: -200px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.page__title {
+  text-align: center;
+}
+.page__content {
+  flex: 1 1 auto;
+  background-color: #fff;
+  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.25);
+}
+
 .calculators__items {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
 }
 @media (max-width: 479.98px) {
   .calculators__items {
