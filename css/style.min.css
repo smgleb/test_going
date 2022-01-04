@@ -516,7 +516,7 @@ body._lock {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
 }
-@media (max-width: 479.98px) {
+@media (max-width: 991.98px) {
   .calculators__items {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
