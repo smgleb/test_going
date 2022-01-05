@@ -31,6 +31,7 @@
 
 ._icon-del:before {
   content: "\e900";
+  font-size: 20px;
 }
 
 ._icon-icon:before {
@@ -40,6 +41,7 @@
 ._icon-plus:before {
   content: "\e902";
   color: #ffa800;
+  font-size: 22px;
 }
 
 ._icon-question:before {
@@ -345,7 +347,6 @@ body._lock {
   }
 }
 .icon-menu {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   margin: 0px 20px 0px 0px;
   display: block;
   position: relative;

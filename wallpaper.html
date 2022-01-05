@@ -22,7 +22,7 @@
 			</div>
 			<div class="header__menu menu">
 				<div class="menu__header">
-					<a href="test_going/" class="header__logo">
+					<a href="/" class="header__logo">
 						<img src="./img/logo.svg" alt="going калькулятор">
 					</a>
 					<div class="icon-menu-active">
@@ -33,7 +33,7 @@
 				</div>
 				<nav class="menu__body">
 					<ul class="menu__list">
-						<li><a href="test_going/wallpaper.html" class="menu__link"><img class="menu__img"
+						<li><a href="/wallpaper.html" class="menu__link"><img class="menu__img"
 									src="./img/category/wallpaper.svg" alt="">
 								<p class="menu__text">Рассчитать обои </p>
 								<div class="_icon-icon"></div>
@@ -48,7 +48,7 @@
 					</ul>
 				</nav>
 			</div>
-			<a href="test_going/" class="header__logo">
+			<a href="/" class="header__logo">
 				<img src="./img/logo.svg" alt="going калькулятор">
 			</a>
 		</div>
@@ -59,7 +59,7 @@
 		<main class="page">
 			<div class="page__body _container-body">
 				<h1 class="page__title _title">
-					Рассчёт количества обоев
+					Калькулятор обоев
 				</h1>
 				<div class="page__content">
 					<div class="page__header header-calc">
@@ -67,60 +67,173 @@
 							<div class="header-calc__insets">
 								<div id="room-tab" class="header-calc__inset tab-page _active">
 									<div class="_icon-room"></div>
-									<div class="tab-page__title">По комнатам</div>
+									<div class="tab-page__title">
+										<h2>По комнатам</h2>
+									</div>
 								</div>
 								<div id="wall-tab" class="header-calc__inset tab-page">
 									<div class="_icon-wall"></div>
-									<div class="tab-page__title">По стенам</div>
+									<div class="tab-page__title">
+										<h2>По стенам</h2>
+									</div>
 								</div>
 							</div>
 							<div id="icon-info-mobile" class="_icon-question info-other-mobile"></div>
 							<div id="info-body-mobile" class="header-calc__insets-btn">
-								<div id="details-tab" class="header-calc__btn page-header-btn tab-more">Детали </div>
-								<div id="instruction-tab" class="header-calc__btn page-header-btn tab-more">Инструкция </div>
+								<div id="details-tab" class="header-calc__btn page-header-btn tab-more">
+									<h2>Детали</h2>
+								</div>
+								<div id="instruction-tab" class="header-calc__btn page-header-btn tab-more">
+									<h2>Инструкция</h2>
+								</div>
 							</div>
 						</div>
 					</div>
+					<!--body section=================================================-->
 					<section id="room-body" class="page__wallpapers calc-count _active">
 						<div class="calc-count__body">
-							<div class="calc-count__forms forms"></div>
+							<div class="calc-count__forms forms">
+								<div class="forms__block inp-block">
+									<div class="inp-block__title">Размеры комнаты</div>
+									<div class="inp-block__content">
+										<div class="inp-block__items">
+											<div class="inp-block__item inp-item">
+												<div class="inp-item__header">
+													<div class="inp-item__title">Комната 1</div>
+													<div class="_icon-del inp-item__rotate-del"></div>
+												</div>
+												<div class="inp-item__body">
+													<div class="inp-item__inp-row">
+														<div class="inp-item__name">Ширина</div>
+														<input class="inp-item__input" id="room_1-width" autocomplete="off"
+															type="number" name="room" data-error="Ошибка" data-value=""
+															placeholder="5.18">
+														<div class="inp-item__unit">м</div>
+													</div>
+													<div class="inp-item__inp-row">
+														<div class="inp-item__name">Длина</div>
+														<input class="inp-item__input" id="room_1-length" autocomplete="off"
+															type="number" name="room" data-error="Ошибка" data-value=""
+															placeholder="5.18">
+														<div class="inp-item__unit">м</div>
+													</div>
+													<div class="inp-item__inp-row">
+														<div class="inp-item__name">Высота</div>
+														<input class="inp-item__input" id="room_1-height" autocomplete="off"
+															type="number" name="room" data-error="Ошибка" data-value=""
+															placeholder="5.18">
+														<div class="inp-item__unit">м</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="inp-block__item inp-item">
+												<div class="inp-item__header">
+													<div class="inp-item__title">Комната 1</div>
+													<div class="_icon-del inp-item__rotate-del"></div>
+												</div>
+												<div class="inp-item__body">
+													<div class="inp-item__inp-row">
+														<div class="inp-item__name">Ширина</div>
+														<input class="inp-item__input" id="room_1-width" autocomplete="off"
+															type="number" name="room" data-error="Ошибка" data-value=""
+															placeholder="5.18">
+														<div class="inp-item__unit">м</div>
+													</div>
+													<div class="inp-item__inp-row">
+														<div class="inp-item__name">Длина</div>
+														<input class="inp-item__input" id="room_1-length" autocomplete="off"
+															type="number" name="room" data-error="Ошибка" data-value=""
+															placeholder="5.18">
+														<div class="inp-item__unit">м</div>
+													</div>
+													<div class="inp-item__inp-row">
+														<div class="inp-item__name">Высота</div>
+														<input class="inp-item__input" id="room_1-height" autocomplete="off"
+															type="number" name="room" data-error="Ошибка" data-value=""
+															placeholder="5.18">
+														<div class="inp-item__unit">м</div>
+													</div>
+												</div>
+											</div>
+											<div class="inp-block__item inp-item">
+												<div class="inp-item__header">
+													<div class="inp-item__title">Комната 1</div>
+													<div class="_icon-del inp-item__rotate-del"></div>
+												</div>
+												<div class="inp-item__body">
+													<div class="inp-item__inp-row">
+														<div class="inp-item__name">Ширина</div>
+														<input class="inp-item__input" id="room_1-width" autocomplete="off"
+															type="number" name="room" data-error="Ошибка" data-value=""
+															placeholder="5.18">
+														<div class="inp-item__unit">м</div>
+													</div>
+													<div class="inp-item__inp-row">
+														<div class="inp-item__name">Длина</div>
+														<input class="inp-item__input" id="room_1-length" autocomplete="off"
+															type="number" name="room" data-error="Ошибка" data-value=""
+															placeholder="5.18">
+														<div class="inp-item__unit">м</div>
+													</div>
+													<div class="inp-item__inp-row">
+														<div class="inp-item__name">Высота</div>
+														<input class="inp-item__input" id="room_1-height" autocomplete="off"
+															type="number" name="room" data-error="Ошибка" data-value=""
+															placeholder="5.18">
+														<div class="inp-item__unit">м</div>
+													</div>
+												</div>
+											</div>
+											<div class="inp-block__item inp-item">
+												<div class="inp-item__header">
+													<div class="inp-item__title">Комната 1</div>
+													<div class="_icon-del inp-item__rotate-del"></div>
+												</div>
+												<div class="inp-item__body">
+													<div class="inp-item__inp-row">
+														<div class="inp-item__name">Ширина</div>
+														<input class="inp-item__input" id="room_1-width" autocomplete="off"
+															type="number" name="room" data-error="Ошибка" data-value=""
+															placeholder="5.18">
+														<div class="inp-item__unit">м</div>
+													</div>
+													<div class="inp-item__inp-row">
+														<div class="inp-item__name">Длина</div>
+														<input class="inp-item__input" id="room_1-length" autocomplete="off"
+															type="number" name="room" data-error="Ошибка" data-value=""
+															placeholder="5.18">
+														<div class="inp-item__unit">м</div>
+													</div>
+													<div class="inp-item__inp-row">
+														<div class="inp-item__name">Высота</div>
+														<input class="inp-item__input" id="room_1-height" autocomplete="off"
+															type="number" name="room" data-error="Ошибка" data-value=""
+															placeholder="5.18">
+														<div class="inp-item__unit">м</div>
+													</div>
+												</div>
+											</div>
+
+
+
+
+
+
+										</div>
+										<div class="inp-block__btn add-btn">
+											<div class="_icon-plus"></div>
+											<div class="add-btn__text">Добавить комнату</div>
+										</div>
+									</div>
+								</div>
+							</div>
 							<div class="calc-count__result result"></div>
 						</div>
 					</section>
 					<section id="wall-body" class="page__wallpapers calc-count">
+						234242323244
 						<div class="calc-count__body">
-							4444 ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus eius atque adipisci
-							architecto provident? Iure nihil, error illo placeat nisi hic libero quis nostrum esse repellendus
-							ex natus, culpa saepe doloribus voluptate dolorum vel officiis adipisci autem ducimus blanditiis
-							odit. Repellat inventore cumque consectetur quod maiores sequi sit, debitis nihil est facere
-							eligendi dolores, quos, mollitia doloribus voluptatem architecto beatae velit! Iusto minus ipsa,
-							error illo praesentium doloribus numquam aliquid maxime facere eaque ad laudantium natus nesciunt
-							molestiae consectetur tempore accusamus unde sint id qui eveniet illum, quia recusandae
-							reprehenderit. Id ratione ullam sint cum assumenda corrupti voluptatum consectetur est neque,
-							tempore possimus nisi, sit iusto asperiores beatae delectus odio temporibus facilis, numquam
-							architecto nulla cumque? Pariatur quis dicta illum consectetur, quam explicabo, aut placeat enim
-							assumenda voluptatum sapiente, temporibus vero impedit! Dicta ut voluptates pariatur, quia ipsum
-							adipisci eius, tempore quidem voluptatem laudantium nemo. Accusantium voluptatibus eius quibusdam
-							aut reiciendis nesciunt, commodi similique ratione voluptas distinctio corporis odit eos saepe!
-							Iure provident tempore itaque expedita veniam dolor aspernatur illum molestias! Ab tempora dolorem,
-							aliquam doloribus culpa blanditiis dolorum quisquam consequatur vel voluptas quo, at natus animi et
-							exercitationem, atque molestiae! Earum aliquam quisquam fugit dolorum ullam ut sunt repudiandae
-							nisi? Repellendus provident qui numquam asperiores at cumque explicabo recusandae, porro excepturi
-							debitis deserunt praesentium ratione amet minima ea culpa id alias, sapiente nisi veritatis totam
-							nemo dolorum? Voluptates pariatur reprehenderit error, mollitia officia tempore commodi hic!
-							Similique quod id ut iusto, animi dolorum sequi quam nesciunt alias? Voluptas ab illum quia vero
-							voluptatem nulla perferendis! Nam totam eligendi quam neque molestias minima id similique
-							explicabo, quas beatae quidem repellat, rerum dolore sed, assumenda error! Eos, deleniti beatae
-							nostrum quisquam odio laudantium distinctio fugit, iure illo ab dolor temporibus provident suscipit
-							quis minima aspernatur iusto dignissimos dolorem blanditiis consequuntur praesentium, facilis illum
-							ullam officiis! Facilis esse similique architecto quibusdam beatae necessitatibus, placeat vel
-							blanditiis consequuntur iure aperiam eaque alias quam earum recusandae! Sit nesciunt voluptatum
-							iste provident quis? Quaerat possimus praesentium quidem? Explicabo nostrum molestiae vel illum
-							modi provident neque. Nulla maiores possimus odit labore a optio sunt voluptatem inventore. Aut
-							dolore laborum doloribus reprehenderit voluptatum, fugiat ipsum id non autem sed ducimus minima
-							necessitatibus repellendus quia voluptate provident enim quo excepturi in! Quasi fuga assumenda,
-							laboriosam illum, expedita rem voluptatum ea dolore ab, quae dolorum quod tempora velit
-							reprehenderit aliquam? Quaerat deserunt nesciunt, laboriosam dolore magni nisi nobis iste?
 							<div class="calc-count__forms forms"></div>
 							<div class="calc-count__result result"></div>
 						</div>
