@@ -798,12 +798,20 @@ body._lock {
 }
 @media (max-width: 1950px) {
   .inp-block__items {
+<<<<<<< HEAD
     gap: calc(30px + 20 * ((100vw - 320px) / 1630));
+=======
+    gap: calc(40px + 10 * ((100vw - 320px) / 1630));
+>>>>>>> 28f936c30142f3944d70eaf387aa0fdbfac6ab46
   }
 }
 @media (max-width: 1115px) {
   .inp-block__items {
+<<<<<<< HEAD
     grid-template-columns: repeat(auto-fit, minmax(190px, 190px));
+=======
+    grid-template-columns: repeat(auto-fit, minmax(180px, 180px));
+>>>>>>> 28f936c30142f3944d70eaf387aa0fdbfac6ab46
   }
 }
 @media (max-width: 767.98px) {
