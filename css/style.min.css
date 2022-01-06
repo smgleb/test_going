@@ -65,7 +65,7 @@
   }
 
   ._icon-wall:before {
-    font-size: 28px;
+    font-size: 30px;
   }
 
   ._icon-del:before {
@@ -74,7 +74,7 @@
 }
 @media (max-width: 767px) {
   ._icon-room:before {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   ._icon-wall:before {
