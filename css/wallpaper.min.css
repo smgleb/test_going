@@ -798,12 +798,12 @@ body._lock {
 }
 @media (max-width: 1950px) {
   .inp-block__items {
-    gap: calc(40px + 10 * ((100vw - 320px) / 1630));
+    gap: calc(30px + 20 * ((100vw - 320px) / 1630));
   }
 }
 @media (max-width: 1115px) {
   .inp-block__items {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 180px));
+    grid-template-columns: repeat(auto-fit, minmax(190px, 190px));
   }
 }
 @media (max-width: 767.98px) {
@@ -854,6 +854,9 @@ body._lock {
   justify-content: space-between;
   align-items: center;
   margin: 0px 0px 10px 0px;
+}
+.inp-item__inp-row:last-child {
+  margin: 0px 0px 0px 0px;
 }
 .inp-item__name {
   flex: 0 0 90px;
