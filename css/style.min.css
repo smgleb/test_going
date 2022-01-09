@@ -47,6 +47,7 @@
 ._icon-question:before {
   content: "\e903";
   color: #cdcdcd;
+  font-size: 18px;
 }
 
 ._icon-room:before {

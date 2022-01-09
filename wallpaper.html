@@ -22,7 +22,7 @@
 			</div>
 			<div class="header__menu menu">
 				<div class="menu__header">
-					<a href="/" class="header__logo">
+					<a href="./" class="header__logo">
 						<img src="./img/logo.svg" alt="going калькулятор">
 					</a>
 					<div class="icon-menu-active">
@@ -33,7 +33,7 @@
 				</div>
 				<nav class="menu__body">
 					<ul class="menu__list">
-						<li><a href="/wallpaper.html" class="menu__link"><img class="menu__img"
+						<li><a href="./wallpaper.html" class="menu__link"><img class="menu__img"
 									src="./img/category/wallpaper.svg" alt="">
 								<p class="menu__text">Рассчитать обои </p>
 								<div class="_icon-icon"></div>
@@ -48,7 +48,7 @@
 					</ul>
 				</nav>
 			</div>
-			<a href="/" class="header__logo">
+			<a href="./" class="header__logo">
 				<img src="./img/logo.svg" alt="going калькулятор">
 			</a>
 		</div>
@@ -93,7 +93,7 @@
 					<section id="room-body" class="page__wallpapers calc-count _active">
 						<div class="calc-count__body">
 							<div class="calc-count__forms forms">
-								<div class="forms__block inp-block">
+								<div id="room-block" class="forms__block inp-block inp-block_change _active">
 									<div class="inp-block__title">Размеры комнаты</div>
 									<div class="inp-block__content">
 										<div class="inp-block__items">
@@ -185,41 +185,6 @@
 													</div>
 												</div>
 											</div>
-											<div class="inp-block__item inp-item">
-												<div class="inp-item__header">
-													<div class="inp-item__title">Комната 1</div>
-													<div class="_icon-del inp-item__rotate-del"></div>
-												</div>
-												<div class="inp-item__body">
-													<div class="inp-item__inp-row">
-														<div class="inp-item__name">Ширина</div>
-														<input class="inp-item__input" id="room_1-width" autocomplete="off"
-															type="number" name="room" data-error="Ошибка" data-value=""
-															placeholder="5.18">
-														<div class="inp-item__unit">м</div>
-													</div>
-													<div class="inp-item__inp-row">
-														<div class="inp-item__name">Длина</div>
-														<input class="inp-item__input" id="room_1-length" autocomplete="off"
-															type="number" name="room" data-error="Ошибка" data-value=""
-															placeholder="5.18">
-														<div class="inp-item__unit">м</div>
-													</div>
-													<div class="inp-item__inp-row">
-														<div class="inp-item__name">Высота</div>
-														<input class="inp-item__input" id="room_1-height" autocomplete="off"
-															type="number" name="room" data-error="Ошибка" data-value=""
-															placeholder="5.18">
-														<div class="inp-item__unit">м</div>
-													</div>
-												</div>
-											</div>
-
-
-
-
-
-
 										</div>
 										<div class="inp-block__btn add-btn">
 											<div class="_icon-plus"></div>
@@ -227,14 +192,309 @@
 										</div>
 									</div>
 								</div>
+								<div id="wall-block" class="forms__block inp-block inp-block_change">
+									<div class="inp-block__title">Размеры стен</div>
+									<div class="inp-block__content">
+										<div class="inp-block__items">
+											<div class="inp-block__item inp-item">
+												<div class="inp-item__header">
+													<div class="inp-item__title">Стена 1</div>
+													<div class="_icon-del inp-item__rotate-del"></div>
+												</div>
+												<div class="inp-item__body">
+													<div class="inp-item__inp-row">
+														<div class="inp-item__name">Ширина</div>
+														<input class="inp-item__input" id="wall_1-width" autocomplete="off"
+															type="number" name="wall" data-error="Ошибка" data-value=""
+															placeholder="5.18">
+														<div class="inp-item__unit">м</div>
+													</div>
+													<div class="inp-item__inp-row">
+														<div class="inp-item__name">Высота</div>
+														<input class="inp-item__input" id="wall_1-height" autocomplete="off"
+															type="number" name="wall" data-error="Ошибка" data-value=""
+															placeholder="5.18">
+														<div class="inp-item__unit">м</div>
+													</div>
+												</div>
+											</div>
+
+										</div>
+										<div class="inp-block__btn add-btn">
+											<div class="_icon-plus"></div>
+											<div class="add-btn__text">Добавить стену</div>
+										</div>
+									</div>
+								</div>
+								<div class="forms__block inp-block">
+									<div class="inp-block__title">Размеры окон</div>
+									<div class="inp-block__content">
+										<div class="inp-block__items">
+											<div class="inp-block__item inp-item">
+												<div class="inp-item__header">
+													<div class="inp-item__title">Окно 1</div>
+													<div class="_icon-del inp-item__rotate-del"></div>
+												</div>
+												<div class="inp-item__body">
+													<div class="inp-item__inp-row">
+														<div class="inp-item__name">Ширина</div>
+														<input class="inp-item__input" id="wondow_1-width" autocomplete="off"
+															type="number" name="window" data-error="Ошибка" data-value=""
+															placeholder="5.18">
+														<div class="inp-item__unit">м</div>
+													</div>
+													<div class="inp-item__inp-row">
+														<div class="inp-item__name">Длина</div>
+														<input class="inp-item__input" id="window_1-length" autocomplete="off"
+															type="number" name="window" data-error="Ошибка" data-value=""
+															placeholder="5.18">
+														<div class="inp-item__unit">м</div>
+													</div>
+													<div class="inp-item__inp-row inp-item__inp-row_num">
+														<div class="inp-item__name inp-item__name_num">Колличество</div>
+														<input class="inp-item__input inp-item__input_num" id="window_1-num"
+															autocomplete="off" type="number" name="window" data-error="Ошибка"
+															data-value="" placeholder="1">
+														<div class="inp-item__unit inp-item__unit_num">шт.</div>
+													</div>
+												</div>
+											</div>
+											<div class="inp-block__item inp-item">
+												<div class="inp-item__header">
+													<div class="inp-item__title">Окно 1</div>
+													<div class="_icon-del inp-item__rotate-del"></div>
+												</div>
+												<div class="inp-item__body">
+													<div class="inp-item__inp-row">
+														<div class="inp-item__name">Ширина</div>
+														<input class="inp-item__input" id="wondow_1-width" autocomplete="off"
+															type="number" name="window" data-error="Ошибка" data-value=""
+															placeholder="5.18">
+														<div class="inp-item__unit">м</div>
+													</div>
+													<div class="inp-item__inp-row">
+														<div class="inp-item__name">Длина</div>
+														<input class="inp-item__input" id="window_1-length" autocomplete="off"
+															type="number" name="window" data-error="Ошибка" data-value=""
+															placeholder="5.18">
+														<div class="inp-item__unit">м</div>
+													</div>
+													<div class="inp-item__inp-row inp-item__inp-row_num">
+														<div class="inp-item__name inp-item__name_num">Колличество</div>
+														<input class="inp-item__input inp-item__input_num" id="window_1-num"
+															autocomplete="off" type="number" name="window" data-error="Ошибка"
+															data-value="" placeholder="1">
+														<div class="inp-item__unit inp-item__unit_num">шт.</div>
+													</div>
+												</div>
+											</div>
+											<div class="inp-block__item inp-item">
+												<div class="inp-item__header">
+													<div class="inp-item__title">Окно 1</div>
+													<div class="_icon-del inp-item__rotate-del"></div>
+												</div>
+												<div class="inp-item__body">
+													<div class="inp-item__inp-row">
+														<div class="inp-item__name">Ширина</div>
+														<input class="inp-item__input" id="wondow_1-width" autocomplete="off"
+															type="number" name="window" data-error="Ошибка" data-value=""
+															placeholder="5.18">
+														<div class="inp-item__unit">м</div>
+													</div>
+													<div class="inp-item__inp-row">
+														<div class="inp-item__name">Длина</div>
+														<input class="inp-item__input" id="window_1-length" autocomplete="off"
+															type="number" name="window" data-error="Ошибка" data-value=""
+															placeholder="5.18">
+														<div class="inp-item__unit">м</div>
+													</div>
+													<div class="inp-item__inp-row inp-item__inp-row_num">
+														<div class="inp-item__name inp-item__name_num">Колличество</div>
+														<input class="inp-item__input inp-item__input_num" id="window_1-num"
+															autocomplete="off" type="number" name="window" data-error="Ошибка"
+															data-value="" placeholder="1">
+														<div class="inp-item__unit inp-item__unit_num">шт.</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="inp-block__btn add-btn">
+											<div class="_icon-plus"></div>
+											<div class="add-btn__text">Добавить окно</div>
+										</div>
+									</div>
+								</div>
+								<div class="forms__block inp-block">
+									<div class="inp-block__title">Размеры дверей</div>
+									<div class="inp-block__content">
+										<div class="inp-block__items">
+											<div class="inp-block__item inp-item">
+												<div class="inp-item__header">
+													<div class="inp-item__title">Дверь 1</div>
+													<div class="_icon-del inp-item__rotate-del"></div>
+												</div>
+												<div class="inp-item__body">
+													<div class="inp-item__inp-row">
+														<div class="inp-item__name">Ширина</div>
+														<input class="inp-item__input" id="door_1-width" autocomplete="off"
+															type="number" name="door" data-error="Ошибка" data-value=""
+															placeholder="5.18">
+														<div class="inp-item__unit">м</div>
+													</div>
+													<div class="inp-item__inp-row">
+														<div class="inp-item__name">Длина</div>
+														<input class="inp-item__input" id="door_1-length" autocomplete="off"
+															type="number" name="door" data-error="Ошибка" data-value=""
+															placeholder="5.18">
+														<div class="inp-item__unit">м</div>
+													</div>
+													<div class="inp-item__inp-row inp-item__inp-row_num">
+														<div class="inp-item__name inp-item__name_num">Колличество</div>
+														<input class="inp-item__input inp-item__input_num" id="door_1-num"
+															autocomplete="off" type="number" name="door" data-error="Ошибка"
+															data-value="" placeholder="1">
+														<div class="inp-item__unit inp-item__unit_num">шт.</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="inp-block__btn add-btn">
+											<div class="_icon-plus"></div>
+											<div class="add-btn__text">Добавить дверь</div>
+										</div>
+									</div>
+								</div>
+								<div class="forms__block inp-block">
+									<div class="inp-block__title">Размеры рулона</div>
+									<div class="inp-block__content">
+										<div class="inp-block__items inp-block__items_rulon">
+											<div class="inp-block__item inp-item">
+												<div class="inp-item__header">
+													<div class="inp-item__title">Ширина</div>
+												</div>
+												<div class="inp-item__body">
+													<div class="inp-item__inp-row">
+														<div class="inp-item__radio radio">
+															<input class="radio__inp" type="radio" name="rulon" id='rulon_05-width'>
+															<label for="rulon_05-width" class="radio__text">0.53 м</label>
+														</div>
+													</div>
+													<div class="inp-item__inp-row">
+														<div class="inp-item__radio radio">
+															<input class="radio__inp" type="radio" name="rulon" id='rulon_106-width'>
+															<label for="rulon_106-width" class="radio__text">1.06 м</label>
+														</div>
+													</div>
+													<div class="inp-item__inp-row inp-item__inp-row_сustom">
+														<div class="inp-item__name inp-item__name_сustom">Свой размер</div>
+														<input class="inp-item__input inp-item__input_сustom" id="custom_rulon-width"
+															autocomplete="off" type="number" name="rulon" data-error="Ошибка"
+															data-value="" placeholder="1">
+														<div class="inp-item__unit inp-item__unit_сustom">м</div>
+													</div>
+												</div>
+											</div>
+											<div class="inp-block__item inp-item">
+												<div class="inp-item__header">
+													<div class="inp-item__title">Длина</div>
+												</div>
+												<div class="inp-item__body">
+													<div class="inp-item__inp-row">
+														<div class="inp-item__radio radio">
+															<input class="radio__inp" type="radio" name="rulon" id='rulon_10-length'>
+															<label for="rulon_10-length" class="radio__text">10 м</label>
+														</div>
+													</div>
+													<div class="inp-item__inp-row">
+														<div class="inp-item__radio radio">
+															<input class="radio__inp" type="radio" name="rulon" id='rulon_15-length'>
+															<label for="rulon_15-length" class="radio__text">15 м</label>
+														</div>
+													</div>
+													<div class="inp-item__inp-row inp-item__inp-row_сustom">
+														<div class="inp-item__name inp-item__name_сustom">Свой размер</div>
+														<input class="inp-item__input inp-item__input_сustom" id="custom_rulon-length"
+															autocomplete="off" type="number" name="rulon" data-error="Ошибка"
+															data-value="" placeholder="1">
+														<div class="inp-item__unit inp-item__unit_сustom">м</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="forms__block inp-block">
+									<div class="inp-block__title inp-block__title_question">Смещение рисунка (рапорт) <span
+											class="_icon-question"></span>
+									</div>
+									<div class="inp-block__content">
+										<div class="inp-block__items inp-block__items_raport">
+											<div class="inp-block__item inp-item">
+												<div class="inp-item__body">
+													<div class="inp-item__inp-row">
+														<div class="inp-item__name inp-item__name_raport">Размер рапорта</div>
+														<input class="inp-item__input" id="raport-size" autocomplete="off"
+															type="number" name="rulon" data-error="Ошибка" data-value=""
+															placeholder="0.5">
+														<div class="inp-item__unit">м</div>
+													</div>
+												</div>
+											</div>
+											<div class="inp-block__item inp-item">
+												<div class="inp-item__body">
+													<div class="inp-item__inp-row">
+														<div class="inp-item__name inp-item__name_raport">Размер смещения</div>
+														<input class="inp-item__input" id="raport-bias" autocomplete="off"
+															type="number" name="rulon" data-error="Ошибка" data-value=""
+															placeholder="0.5">
+														<div class="inp-item__unit">м</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="forms__block inp-block">
+									<div class="inp-block__title">Запас</div>
+									<div class="inp-block__content">
+										<div class="inp-block__items inp-block__items_stock">
+											<div class="inp-block__item inp-item">
+												<div class="inp-item__body inp-item__body_stock">
+													<div class="inp-item__inp-row inp-item__inp-row_stock">
+														<div class="inp-item__radio radio">
+															<input class="radio__inp" type="radio" name="stock" id='stock_no'>
+															<label for="stock_no" class="radio__text">Без запаса</label>
+														</div>
+													</div>
+													<div class="inp-item__inp-row inp-item__inp-row_stock">
+														<div class="inp-item__radio radio">
+															<input class="radio__inp" type="radio" name="stock" id='stock_5'>
+															<label for="stock_5" class="radio__text">5%</label>
+														</div>
+													</div>
+													<div class="inp-item__inp-row inp-item__inp-row_stock">
+														<div class="inp-item__radio radio">
+															<input class="radio__inp" type="radio" name="stock" id='stock_10'>
+															<label for="stock_10" class="radio__text">10%</label>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="inp-block__item inp-item">
+												<div class="inp-item__body">
+													<div class="inp-item__inp-row inp-item__inp-row_stock">
+														<div class="inp-item__name inp-item__name_stock">Свой размер</div>
+														<input class="inp-item__input" id="custom_stock" autocomplete="off"
+															type="number" name="rulon" data-error="Ошибка" data-value=""
+															placeholder="1">
+														<div class="inp-item__unit inp-item__unit_stock">м</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
-							<div class="calc-count__result result"></div>
-						</div>
-					</section>
-					<section id="wall-body" class="page__wallpapers calc-count">
-						234242323244
-						<div class="calc-count__body">
-							<div class="calc-count__forms forms"></div>
 							<div class="calc-count__result result"></div>
 						</div>
 					</section>
