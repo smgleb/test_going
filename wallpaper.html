@@ -424,8 +424,12 @@
 									</div>
 								</div>
 								<div class="forms__block inp-block">
-									<div class="inp-block__title inp-block__title_question">Смещение рисунка (рапорт) <span
-											class="_icon-question"></span>
+									<div class="inp-block__title inp-block__title_question">Смещение рисунка (рапорт)
+										<div class="_icon-question">
+											<span class="inp-block__help">Для обоев с рисунком при расчете учитывается раппорт.
+												Этот параметр показывает, через какое расстояние повторяется узор (как правило
+												рапорт указывается на упаковке обоев)</span>
+										</div>
 									</div>
 									<div class="inp-block__content">
 										<div class="inp-block__items inp-block__items_raport">
@@ -467,13 +471,13 @@
 														</div>
 													</div>
 													<div class="inp-item__inp-row inp-item__inp-row_stock">
-														<div class="inp-item__radio radio">
+														<div class="inp-item__radio radio radio_m1">
 															<input class="radio__inp" type="radio" name="stock" id='stock_5'>
 															<label for="stock_5" class="radio__text">5%</label>
 														</div>
 													</div>
 													<div class="inp-item__inp-row inp-item__inp-row_stock">
-														<div class="inp-item__radio radio">
+														<div class="inp-item__radio radio radio_m2">
 															<input class="radio__inp" type="radio" name="stock" id='stock_10'>
 															<label for="stock_10" class="radio__text">10%</label>
 														</div>
@@ -482,12 +486,12 @@
 											</div>
 											<div class="inp-block__item inp-item">
 												<div class="inp-item__body">
-													<div class="inp-item__inp-row inp-item__inp-row_stock">
-														<div class="inp-item__name inp-item__name_stock">Свой размер</div>
+													<div class="inp-item__inp-row">
+														<div class="inp-item__name inp-item__name_stock">Свой запас</div>
 														<input class="inp-item__input" id="custom_stock" autocomplete="off"
 															type="number" name="rulon" data-error="Ошибка" data-value=""
 															placeholder="1">
-														<div class="inp-item__unit inp-item__unit_stock">м</div>
+														<div class="inp-item__unit inp-item__unit_stock">%</div>
 													</div>
 												</div>
 											</div>
