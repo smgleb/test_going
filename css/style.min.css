@@ -41,7 +41,6 @@
 ._icon-plus:before {
   content: "\e902";
   color: #ffa800;
-  font-size: 22px;
 }
 
 ._icon-question:before {
@@ -90,6 +89,8 @@
   padding: 0px;
   margin: 0px;
   border: 0px;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 
 *,

@@ -42,7 +42,6 @@
 ._icon-plus:before {
   content: "\e902";
   color: #ffa800;
-  font-size: 22px;
 }
 
 ._icon-question:before {
@@ -91,6 +90,8 @@
   padding: 0px;
   margin: 0px;
   border: 0px;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 
 *,
@@ -835,7 +836,6 @@ body._lock {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(210px, 220px));
   gap: 50px;
-  margin: 0px 0px 25px 0px;
 }
 @media (max-width: 1950px) {
   .inp-block__items {
@@ -914,6 +914,12 @@ body._lock {
   .inp-block__items_stock {
     grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   }
+}
+.inp-block__btn {
+  margin: 25px 0px 0px 0px;
+}
+.inp-block__btn._no-item {
+  margin: 0px 0px 0px 0px;
 }
 .inp-block_change {
   display: none;
@@ -1096,19 +1102,28 @@ body._lock {
   display: flex;
   align-items: center;
   width: 210px;
+  height: auto;
   border: 1px solid #c4c4c4;
   box-sizing: border-box;
   border-radius: 5px;
-  padding: 10px;
   cursor: pointer;
+  height: 100%;
 }
 .add-btn__text {
+  flex: 1 1 auto;
   font-size: 18px;
   line-height: 19px;
-  margin: 0px 0px 0px 10px;
+  padding: 10px;
 }
 .add-btn:hover {
   border: 1px solid #151515;
+}
+
+._icon-plus.modi:before {
+  content: "\e902";
+  color: #ffa800;
+  font-size: 22px;
+  padding: 10px 0px 10px 10px;
 }
 
 .radio {
