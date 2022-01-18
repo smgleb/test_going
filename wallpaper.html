@@ -96,7 +96,7 @@
 								<div id="room-block" class="forms__block inp-block inp-block_change _active">
 									<div class="inp-block__title">Размеры комнаты</div>
 									<div class="inp-block__content">
-										<div class="inp-block__items">
+										<div id="room-items" class="inp-block__items">
 											<div class="inp-block__item inp-item">
 												<div class="inp-item__header">
 													<div class="inp-item__title">Комната <span class="inp-item__title-num">1</span>
@@ -137,7 +137,7 @@
 								<div id="wall-block" class="forms__block inp-block inp-block_change">
 									<div class="inp-block__title">Размеры стен</div>
 									<div class="inp-block__content">
-										<div class="inp-block__items">
+										<div id="wall-items" class="inp-block__items">
 											<div class="inp-block__item inp-item">
 												<div class="inp-item__header">
 													<div class="inp-item__title">Стена <span class="inp-item__title-num">1</span>
@@ -172,7 +172,7 @@
 								<div id="window-block" class="forms__block inp-block">
 									<div class="inp-block__title">Размеры окон</div>
 									<div class="inp-block__content">
-										<div class="inp-block__items">
+										<div id="window-items" class="inp-block__items">
 											<div class="inp-block__item inp-item">
 												<div class="inp-item__header">
 													<div class="inp-item__title">Окно <span class="inp-item__title-num">1</span>
@@ -198,7 +198,7 @@
 														<div class="inp-item__name inp-item__name_num">Колличество</div>
 														<input class="inp-item__input inp-item__input_num" id="window_1-num"
 															autocomplete="off" type="number" name="window" data-error="Ошибка"
-															data-value="" placeholder="1">
+															data-value="" placeholder="1" value="1">
 														<div class="inp-item__unit inp-item__unit_num">шт.</div>
 													</div>
 												</div>
@@ -215,7 +215,7 @@
 								<div id="door-block" class="forms__block inp-block">
 									<div class="inp-block__title">Размеры дверей</div>
 									<div class="inp-block__content">
-										<div class="inp-block__items">
+										<div id="door-items" class="inp-block__items">
 											<div class="inp-block__item inp-item">
 												<div class="inp-item__header">
 													<div class="inp-item__title">Дверь <span class="inp-item__title-num">1</span>
@@ -241,7 +241,7 @@
 														<div class="inp-item__name inp-item__name_num">Колличество</div>
 														<input class="inp-item__input inp-item__input_num" id="door_1-num"
 															autocomplete="off" type="number" name="door" data-error="Ошибка"
-															data-value="" placeholder="1">
+															data-value="" placeholder="1" value="1">
 														<div class="inp-item__unit inp-item__unit_num">шт.</div>
 													</div>
 												</div>
@@ -401,11 +401,11 @@
 										<div class="result__btn-reset">
 											Сбросить все поля
 										</div>
-										<button type="submit" form="wallpaperform" class="result__btn-result btn-result">
+										<button id="btn-res" type="submit" form="wallpaperform"
+											class="result__btn-result btn-result">
 											Рассчитать
 										</button>
 										<div class="result__body body-result">
-
 										</div>
 									</div>
 								</div>

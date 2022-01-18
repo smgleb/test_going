@@ -720,6 +720,10 @@ body._lock {
   }
 }
 
+input._correct {
+  border: 1px solid red;
+}
+
 .calc-count {
   display: none;
 }
