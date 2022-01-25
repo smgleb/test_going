@@ -1070,14 +1070,8 @@ input._correct {
 .inp-item__input::placeholder {
   color: #b4b4b4;
 }
-.inp-item__input::-webkit-input-placeholder {
-  color: #b4b4b4;
-}
-.inp-item__input:-ms-input-placeholder {
-  color: #b4b4b4;
-}
-.inp-item__input::-ms-input-placeholder {
-  color: #b4b4b4;
+.inp-item__input:-moz-focusring {
+  outline: 2px solid #ffa800;
 }
 .inp-item__unit {
   flex: 0 0 10px;
@@ -1184,6 +1178,11 @@ input._correct {
 
 .result {
   padding: 30px;
+}
+@media (max-width: 767.98px) {
+  .result {
+    padding: 15px;
+  }
 }
 .result__btn-reset {
   margin: 0px 0px 10px 0px;
