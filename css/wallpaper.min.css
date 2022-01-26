@@ -882,6 +882,9 @@ body._lock {
 .inp-item__input:focus {
   outline-color: #ffa800;
 }
+.inp-item__input:-webkit-focus {
+  outline-color: #ffa800;
+}
 .inp-item__unit {
   flex: 0 0 10px;
   font-style: normal;
