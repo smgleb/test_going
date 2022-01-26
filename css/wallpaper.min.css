@@ -102,6 +102,11 @@
   box-sizing: border-box;
 }
 
+:focus,
+:active {
+  outline: none;
+}
+
 aside,
 nav,
 footer,
@@ -1065,13 +1070,11 @@ input._correct {
   margin-left: 10px;
 }
 .inp-item__input:focus {
-  outline-color: #ffa800;
+  border: 1px solid #ffa800;
+  box-shadow: 0px 0px 0px 2px #ffa800;
 }
 .inp-item__input::placeholder {
   color: #b4b4b4;
-}
-.inp-item__input:-moz-focusring {
-  outline: 2px solid #ffa800;
 }
 .inp-item__unit {
   flex: 0 0 10px;

@@ -101,6 +101,11 @@
   box-sizing: border-box;
 }
 
+:focus,
+:active {
+  outline: none;
+}
+
 aside,
 nav,
 footer,
