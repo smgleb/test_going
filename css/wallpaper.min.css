@@ -1066,7 +1066,6 @@ input._correct {
 }
 .inp-item__input:focus {
   outline-color: #ffa800;
-  -webkit-box-shadow: 0 0 3px green !important;
 }
 .inp-item__input::placeholder {
   color: #b4b4b4;
@@ -1074,8 +1073,9 @@ input._correct {
 .inp-item__input:-moz-focusring {
   outline: 2px solid #ffa800;
 }
-.inp-item__input:-webkit-focus {
-  outline-color: #ffa800;
+
+.inp-item__input:-webkit-focusring {
+  outline: 2px solid #ffa800;
 }
 .inp-item__unit {
   flex: 0 0 10px;
