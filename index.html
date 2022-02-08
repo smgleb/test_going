@@ -1,113 +1,162 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 
 <head>
-	<title>going Помошник</title>
 	<meta charset="UTF-8">
-	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css">
-	<!-- <meta name="robots" content="noindex, nofollow"> -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Верстка «going»</title>
 </head>
 
 <body>
-	<div class="wrapper">
-		<header class="header">
-	<div class="header__container">
-		<div class="header__row _container">
-			<div class="icon-menu">
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
-			<div class="header__menu menu">
-				<div class="menu__header">
-					<a href="./" class="header__logo">
-						<img src="./img/logo.svg" alt="going калькулятор">
-					</a>
-					<div class="icon-menu-active">
-						<span></span>
-						<span></span>
-						<span></span>
-					</div>
-				</div>
-				<nav class="menu__body">
-					<ul class="menu__list">
-						<li><a href="./wallpaper.html" class="menu__link"><img class="menu__img"
-									src="./img/category/wallpaper.svg" alt="">
-								<p class="menu__text">Рассчитать обои </p>
-								<div class="_icon-icon"></div>
-							</a>
-						</li>
-					</ul>
-				</nav>
-				<nav class="menu__footer">
-					<ul class="menu__list-footer">
-						<li><a href="#" class="menu__link-footer">О проекте</a></li>
-						<li><a href="#" class="menu__link-footer">Политика конфиденциальности</a></li>
-					</ul>
-				</nav>
-			</div>
-			<a href="./" class="header__logo">
-				<img src="./img/logo.svg" alt="going калькулятор">
-			</a>
+	<div class="rootpage">
+		<h1>Верстка «going»</h1>
+		<div class="rootpage__info">
+			Особенности проекта
 		</div>
-		<div class="header__backstyle"></div>
+		<h2>Готовые страницы:</h2>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="home.html">Главная</a></li>
+			<li><a target="_blank" href="wallpaper.html">Обои</a></li>
+		</ol>
+		<!-- <h2>Попапы:</h2> -->
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="home.html#"></a></li>
+		</ol>
+
 	</div>
-	<div class="backgroundMask"></div>
-</header>
-		<main class="page">
-			<div class="page__body _container-body">
-				<h1 class="page__title _title">
-					going.by - полностью бесплатные онлайн-инструменты.
-				</h1>
-				<div class="page__content">
-					<section class="page__calculators calculators">
-						<div class="calculators__items">
-							<article data-calc="wallpaper" class="calculators__item item-calculators">
-								<a href="./wallpaper.html" class="item-calculators__href">
-									<div class="item-calculators__labels">
-										<div class="item-calculators__label item-calculators__label_new">
-											New
-										</div>
-									</div>
-									<div class="item-calculators__img">
-										<img src="./img/category/wallpaper.svg" alt="калькулятор обоев going">
-									</div>
-									<div class="item-calculators__body">
-										<div class="item-calculators__content">
-											<h5 class="item-calculators__title">Калькулятор обоев</h5>
-											<div class="item-calculators__text">Расчёт количесва трубок для поклейки обоев со
-												стыком или без. </div>
-										</div>
-									</div>
-								</a>
-							</article>
-						</div>
-					</section>
-				</div>
-			</div>
-		</main>
-		<footer class="footer">
-	<div class="footer__container">
-		<div class="footer__row _container">
-			<div class="footer__reserved">
-				© 2021 going.by
-			</div>
-			<div class="footer__menu menu-footer">
-				<nav class="menu-footer__body">
-					<ul class="menu-footer__list">
-						<li><a href="" class="menu-footer__link">О проекте</a></li>
-						<li><a href="" class="menu-footer__link">Политика конфиденциальности</a></li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-	</div>
-</footer>
-	</div>
-	<!--<script src="js/vendors.min.js"></script>-->
-<script src="js/script.min.js"></script>
 </body>
+<style>
+	@charset "UTF-8";
+	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+
+	*,
+	*::before,
+	*::after {
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		box-sizing: border-box;
+	}
+
+	html,
+	body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		min-width: 320px;
+		width: 100%;
+		color: #fff;
+		background-color: #cdcdcd;
+	}
+
+	body {
+		font-family: Montserrat;
+		font-size: 100%;
+		line-height: 1;
+		font-size: 2rem;
+		color: #151515;
+	}
+
+	a {
+		text-decoration: underline;
+		color: #89973b;
+	}
+
+	a:visited {
+		text-decoration: underline;
+		color: #89973b;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	ul li {
+		list-style: none;
+	}
+
+	img {
+		vertical-align: top;
+	}
+
+	.wrapper {
+		width: 100%;
+		min-height: 100%;
+		overflow: hidden;
+	}
+
+	.rootpage {
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	@media (max-width: 767px) {
+		.rootpage {
+			padding: 30px 15px;
+		}
+	}
+
+	h1 {
+		color: #796300;
+		font-size: 3rem;
+		margin: 0px 0px 1.25rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h1 {
+			font-size: 2.3rem;
+			margin: 0px 0px 1.25rem 0px;
+		}
+	}
+
+	h2 {
+		color: #151515;
+		font-size: 2rem;
+		margin: 0px 0px 1rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h2 {
+			font-size: 1.125rem;
+			margin: 0px 0px 1rem 0px;
+		}
+	}
+
+	.rootpage__info {
+		line-height: 140%;
+		margin: 0px 0px 1.5rem 0px;
+	}
+
+	.rootpage__list {
+		margin: 0px 0px 2.25rem 1.25rem;
+	}
+
+	.rootpage__list li:not(:last-child) {
+		margin: 0px 0px 15px 0px;
+	}
+
+	.rootpage__contacts,
+	.rootpage__tnx {
+		border-radius: 200px;
+		padding: 20px 65px;
+		line-height: 140%;
+	}
+
+	@media (max-width: 767px) {
+
+		.rootpage__contacts,
+		.rootpage__tnx {
+			border-radius: 40px;
+			padding: 20px;
+		}
+	}
+
+	.rootpage__contacts {
+		background: #32b5a4;
+
+	}
+</style>
 
 </html>
