@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220208211556">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220209215505">
 	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -334,21 +334,21 @@
 								<img src="img/content/formula-wall.svg" alt="wallpaper formula">
 							</div>
 							<div class="wall-details__text-when">
-								<p>где <span>N</span> – Необходимое количество трубок, м;</p>
+								<p>где <span>N</span>– Необходимое количество трубок, м;</p>
 								<p><span>H<sub>w</sub></span> – Высота окон (если разные высоты - интерполируется), м;</p>
 								<p><span>H<sub>d</sub></span> – Длина рулона (трубки) обоев, м;</p>
 								<p><span>L<sub>0</sub></span> – Высота дверей (если разные высоты - интерполируется), м;</p>
 								<p><span>L<sub>1</sub></span> – Длина оклеиваемой части, м;</p>
-								<p>↑ – Округление в большую сторону;</p>
-								<p>↓ – Округление в меньшую сторону;</p>
-								<p><span>P<sub>1</sub></span> – Периметр расчетного помещения (длина стены), за вычетов проемов,
+								<p><span class="none-italic">↑</span> – Округление в большую сторону;</p>
+								<p><span class="none-italic">↓</span> – Округление в меньшую сторону;</p>
+								<p><span>P<sub>1</sub></span> – Периметр расчетного помещения, за вычетом проемов,
 									м.</p>
 							</div>
 							<div class="wall-details__formula wall-details__formula_small">
 								<img src="img/content/formula-wall_1.svg" alt="wallpaper formula">
 							</div>
 							<div class="wall-details__text-when">
-								<p>где <span>P</span> – Периметр расчетного помещения, м;</p>
+								<p>где <span>P</span>– Периметр расчетного помещения, м;</p>
 								<p><span>P<sub>2</sub></span> – Сумма длин всех окон, м;</p>
 								<p><span>P<sub>3</sub></span> – Сумма длин всех дверей, м.</p>
 							</div>
@@ -356,10 +356,10 @@
 								<img src="img/content/formula-wall_2.svg" alt="wallpaper formula">
 							</div>
 							<div class="wall-details__text-when">
-								<p>где <span>H</span> – Высота расчетного помещения, м;</p>
+								<p>где <span>H</span>– Высота расчетного помещения, м;</p>
 								<p><span>H<sub>r</sub></span> – Размер рапорта, м;</p>
 								<p><span>H<sub>t</sub></span> – Размер смещения, м;</p>
-								<p><span>H<sub>p</sub></span> – Размер запаса по высоте (<span>H<sub>p</sub></span> = 0,1 м), м.
+								<p><span>H<sub>p</sub></span> – Размер запаса по высоте (<span class="none-pp">H<sub>p</sub></span>= 0,1м), м.
 								</p>
 							</div>
 						</div>
@@ -373,10 +373,11 @@
 							<div class="wall-dev__content">
 								<div class="wall-dev__item-text item-text">
 									<div class="item-text__title">1. Комнаты или стены:</div>
-									<div class="item-text__text">Для осуществления расчёта необходимо указать размеры комнаты
+									<div class="item-text__subtext"><span>●</span>Для осуществления расчёта необходимо указать
+										размеры комнаты
 										или размеры стен.</div>
 									<div class="item-text__subtext"><span>●</span>Eсли комната имеет прямоугольные или квадратные
-										очертания введите параметры: Длина, Ширина, Высота. </div>
+										очертания введите параметры: "Длина", "Ширина", "Высота". </div>
 									<div class="item-text__subtext"><span>●</span>Для помещений неправильной формы, с выступами и
 										нишами, необходимо прибавить глубину ниш или длину выступов к размерам помещения или
 										стены,
@@ -386,30 +387,34 @@
 								</div>
 								<div class="wall-dev__item-text item-text">
 									<div class="item-text__title">2. Окна:</div>
-									<div class="item-text__text">Если в комнате есть оконный проем, нажмите «Добавить окно» и
-										введите его размеры: Длину и Высоту, так же введите колличество окон такого же размера
+									<div class="item-text__subtext"><span>●</span>Если в комнате есть оконный проем, нажмите
+										«Добавить окно» и
+										введите его размеры: "Длину" и "Высоту", так же введите количество окон такого же размера
 										если их больше 1.
 									</div>
 									<div class="item-text__subtext"><span>●</span>Количество добавляемых окон не ограничено.
 									</div>
 									<div class="item-text__subtext"><span>●</span>Помните, что оконный проем не может быть больше
-										чем размер Комнаты или стены.</div>
+										чем размер комнаты или стены.</div>
 								</div>
 								<div class="wall-dev__item-text item-text">
 									<div class="item-text__title">3. Двери:</div>
-									<div class="item-text__text">Если в комнате есть дверной проем, нажмите «Добавить дверь» и
-										введите его размеры: Длину и Высоту, так же введите колличество дверей такого же размера
+									<div class="item-text__subtext"><span>●</span>Если в комнате есть дверной проем, нажмите
+										«Добавить дверь» и
+										введите его размеры: "Длину" и "Высоту", так же введите количество дверей такого же
+										размера
 										если их больше 1.
 									</div>
 									<div class="item-text__subtext"><span>●</span>Количество добавляемых дверей не ограничено.
 									</div>
 									<div class="item-text__subtext"><span>●</span>Помните, что дверной проем не может быть больше
-										чем размер Комнаты или стены.</div>
+										чем размер комнаты или стены.</div>
 								</div>
 								<div class="wall-dev__item-text item-text">
 									<div class="item-text__title">4. Размеры рулона:</div>
-									<div class="item-text__text">Длина и ширина рулона обоев зависит от их вида и производителя.
-										Стандартное значение Длины = 10,05 м, Ширины = 1,06 м. Однако, флизелиновые обои под
+									<div class="item-text__subtext"><span>●</span>Длина и ширина рулона обоев зависит от их вида
+										и производителя.
+										Стандартное значение "Длины" = 10,05 м, "Ширины" = 1,06 м. Однако, флизелиновые обои под
 										покраску могут выпускаться в рулонах по 30 и 50 метров.
 									</div>
 									<div class="item-text__subtext"><span>●</span>Помните, что длина не может быть больше
@@ -417,7 +422,8 @@
 								</div>
 								<div class="wall-dev__item-text item-text">
 									<div class="item-text__title">5. Смещение рулона ( рапорт ):</div>
-									<div class="item-text__text">Для обоев с рисунком при расчете учитывается раппорт. Этот
+									<div class="item-text__subtext"><span>●</span>Для обоев с рисунком при расчете учитывается
+										раппорт. Этот
 										параметр показывает, через какое расстояние повторяется узор. Возможны 3 вида маркировок
 										(как правило рапорт указывается на упаковке обоев).
 									</div>
@@ -433,7 +439,8 @@
 								</div>
 								<div class="wall-dev__item-text item-text">
 									<div class="item-text__title">6. Запас:</div>
-									<div class="item-text__text">Рекомендуется указывать запас колличества трубок (в процентах)
+									<div class="item-text__subtext"><span>●</span>Рекомендуется указывать запас количества трубок
+										(в процентах)
 										от общего количества обойных трубок во избежание форсмажорных ситуаций. Ваша модель обоев
 										может закончиться в магазине, и при нехватке вы не докупите нужное количество.
 									</div>
@@ -442,7 +449,7 @@
 								<div class="wall-dev__item-text item-text">
 									<div class="item-text__title">7. После ввода всех данных необходимо нажать кнопку
 										"Рассчитать".</div>
-									<div class="item-text__text">Возможные ошибки:
+									<div class="item-text__subtext"><span>●</span>Возможные ошибки:
 									</div>
 									<div class="item-text__subtext"><span>●</span>Введите высоту корректно - высота комнаты или
 										стены меньше чем высота окон или дверей.</div>
@@ -452,9 +459,7 @@
 								<div class="wall-dev__item-text item-text">
 									<div class="item-text__title">8. Для быстрого сброса всех значений используйте кнопку
 										"Сбросить все поля".</div>
-								</div>
-								<div class="wall-dev__item-text item-text">
-									<div class="item-text__title"><span>●</span>Для удобства Калькулятор going.by сохраняет
+									<div class="item-text__subtext"><span>●</span>Для удобства Калькулятор going.by сохраняет
 										введенные вами
 										значение 24 часа.</div>
 								</div>
@@ -482,7 +487,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/wallpaper.min.js?_v=20220208211556"></script>
+	<script src="js/wallpaper.min.js?_v=20220209215505"></script>
 </body>
 
 </html>

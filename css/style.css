@@ -1435,7 +1435,20 @@ input._correct {
 }
 .wall-details__formula {
   max-width: 700px;
-  margin: 50px auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 1920px) {
+  .wall-details__formula {
+    margin-top: calc(30px + 20 * ((100vw - 320px) / 1600));
+  }
+}
+@media (max-width: 1920px) {
+  .wall-details__formula {
+    margin-bottom: calc(30px + 20 * ((100vw - 320px) / 1600));
+  }
 }
 .wall-details__formula img {
   width: 100%;
@@ -1446,7 +1459,25 @@ input._correct {
 }
 .wall-details__formula_small {
   max-width: 150px;
-  margin: 30px auto;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 1920px) {
+  .wall-details__formula_small {
+    max-width: calc(85px + 65 * ((100vw - 320px) / 1600));
+  }
+}
+@media (max-width: 1920px) {
+  .wall-details__formula_small {
+    margin-top: calc(15px + 0 * ((100vw - 320px) / 1600));
+  }
+}
+@media (max-width: 1920px) {
+  .wall-details__formula_small {
+    margin-bottom: calc(30px + 0 * ((100vw - 320px) / 1600));
+  }
 }
 .wall-details__formula_small img {
   width: 100%;
@@ -1457,7 +1488,25 @@ input._correct {
 }
 .wall-details__formula_small-2 {
   max-width: 220px;
-  margin: 30px auto;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 1920px) {
+  .wall-details__formula_small-2 {
+    max-width: calc(130px + 90 * ((100vw - 320px) / 1600));
+  }
+}
+@media (max-width: 1920px) {
+  .wall-details__formula_small-2 {
+    margin-top: calc(15px + 0 * ((100vw - 320px) / 1600));
+  }
+}
+@media (max-width: 1920px) {
+  .wall-details__formula_small-2 {
+    margin-bottom: calc(30px + 0 * ((100vw - 320px) / 1600));
+  }
 }
 .wall-details__formula_small-2 img {
   width: 100%;
@@ -1468,7 +1517,6 @@ input._correct {
 }
 .wall-details__text-when {
   font-size: 18px;
-  line-height: 19px;
 }
 @media (max-width: 1920px) {
   .wall-details__text-when {
@@ -1476,18 +1524,55 @@ input._correct {
   }
 }
 .wall-details__text-when p {
-  padding: 0px 0px 10px 32px;
+  padding: 0px 0px 15px 30px;
 }
-@media (max-width: 400px) {
+@media (max-width: 767.98px) {
   .wall-details__text-when p {
-    padding: 0px 0px 10px 0px;
+    padding: 0px 0px 15px 0px;
+    padding-left: 50px;
+    text-indent: -24px;
   }
 }
 .wall-details__text-when p span {
+  display: inline-block;
+  width: 30px;
+  padding: 0px 25px 0px 10px;
   font-style: italic;
 }
+.wall-details__text-when p span.none-italic {
+  font-style: normal;
+}
+.wall-details__text-when p span.none-pp {
+  display: inline-block;
+  width: 15px;
+  padding: 0px 25px 0px 0px;
+}
+@media (max-width: 767.98px) {
+  .wall-details__text-when p span.none-pp {
+    padding: 0px 0px 0px 25px;
+  }
+}
+@media (max-width: 767.98px) {
+  .wall-details__text-when p span {
+    width: 5px;
+    padding: 0px 0px 0px 5px;
+  }
+}
 .wall-details__text-when p:nth-child(1) {
-  padding: 0px 0px 10px 0px;
+  padding: 0px 0px 15px 0px;
+}
+@media (max-width: 767.98px) {
+  .wall-details__text-when p:nth-child(1) span {
+    display: inline-block;
+    width: 0px;
+    padding: 0px 0px 0px 40px;
+  }
+}
+@media (max-width: 767.98px) {
+  .wall-details__text-when p:nth-child(1) {
+    padding-left: 40px;
+    text-indent: -35px;
+  }
 }
 
 .wall-dev__body {
@@ -1559,6 +1644,8 @@ input._correct {
   font-size: 19px;
   margin: 0px 0px 25px 0px;
   line-height: 20px;
+  margin-left: 1em;
+  text-indent: -1em;
 }
 @media (max-width: 1920px) {
   .item-text__title {
@@ -1570,24 +1657,24 @@ input._correct {
   padding: 0px 10px 0px 0px;
   color: #ffa800;
 }
-.item-text__text {
-  font-size: 17px;
-  padding: 0px 0px 15px 30px;
-  line-height: 20px;
-}
-@media (max-width: 1920px) {
-  .item-text__text {
-    font-size: calc(16px + 1 * ((100vw - 320px) / 1600));
-  }
-}
 .item-text__subtext {
   font-size: 17px;
-  padding: 0px 0px 5px 30px;
+  padding-left: 20px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 10px;
   line-height: 20px;
+  margin-left: 1.5em;
+  text-indent: -1.5em;
 }
 @media (max-width: 1920px) {
   .item-text__subtext {
     font-size: calc(16px + 1 * ((100vw - 320px) / 1600));
+  }
+}
+@media (max-width: 1920px) {
+  .item-text__subtext {
+    padding-left: calc(17px + 3 * ((100vw - 320px) / 1600));
   }
 }
 .item-text__subtext span {
