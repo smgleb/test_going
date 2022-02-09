@@ -1525,7 +1525,7 @@ input._correct {
   }
 }
 .wall-details__text-when p {
-  padding: 0px 0px 15px 30px;
+  padding: 0px 0px 15px 35px;
 }
 @media (max-width: 767.98px) {
   .wall-details__text-when p {
@@ -1563,16 +1563,16 @@ input._correct {
   padding: 0px 0px 15px 0px;
 }
 @media (max-width: 767.98px) {
-  .wall-details__text-when p:nth-child(1) span {
-    display: inline-block;
-    width: 0px;
-    padding: 0px 0px 0px 40px;
+  .wall-details__text-when p:nth-child(1) {
+    padding: 0px 10px 15px 50px;
   }
 }
+.wall-details__text-when p .where {
+  font-style: normal;
+}
 @media (max-width: 767.98px) {
-  .wall-details__text-when p:nth-child(1) {
-    padding-left: 40px;
-    text-indent: -35px;
+  .wall-details__text-when p .where {
+    display: none;
   }
 }
 
