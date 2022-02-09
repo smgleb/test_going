@@ -580,6 +580,10 @@
             }
         }
     }));
+    document.addEventListener("scroll", (() => {
+        let infoBodyMobile = document.querySelector("#info-body-mobile");
+        if (infoBodyMobile.classList.contains("_active")) if (window.pageYOffset > 150) infoBodyMobile.classList.remove("_active");
+    }));
     let arrTrue = [];
     wallpaperForm.addEventListener("submit", (e => {
         e.preventDefault();
